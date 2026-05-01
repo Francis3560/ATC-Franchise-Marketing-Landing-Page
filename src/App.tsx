@@ -7,6 +7,7 @@ import CTASection from "@/components/sections/CTASection"
 import Footer from "@/components/layout/Footer"
 import { BookingProvider, useBooking } from "@/context/BookingContext"
 import BookingModal from "@/components/booking/BookingModal"
+import Testimonials from "@/components/sections/Testimonials"
 
 function AppContent() {
   const { isOpen, closeBooking } = useBooking();
@@ -18,6 +19,7 @@ function AppContent() {
         <Hero />
         <WhyUs />
         <Services />
+        <Testimonials />
         <Results />
         <CTASection />
         <Footer />

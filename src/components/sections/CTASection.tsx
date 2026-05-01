@@ -1,9 +1,7 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { ArrowRight } from 'lucide-react';
-import { useBooking } from '@/context/BookingContext';
 
 export default function CTASection() {
-  const { openBooking } = useBooking();
   const [email, setEmail] = useState('');
   const [submitted, setSubmitted] = useState(false);
 

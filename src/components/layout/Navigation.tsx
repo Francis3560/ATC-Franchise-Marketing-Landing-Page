@@ -1,11 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { Moon, Sun, Menu, X } from 'lucide-react';
 import { useBooking } from '@/context/BookingContext';
 
 function Navigation() {
   const [isDark, setIsDark] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const { isOpen: isBookingOpen, openBooking, closeBooking } = useBooking();
+  const { openBooking } = useBooking();
 
   useEffect(() => {
     // Sync with HTML root class for theme toggle

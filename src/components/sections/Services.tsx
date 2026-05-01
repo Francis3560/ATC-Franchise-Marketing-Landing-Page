@@ -1,4 +1,3 @@
-import React from 'react';
 import { Clock, CreditCard, Users, ArrowDown } from 'lucide-react';
 
 const services = [
